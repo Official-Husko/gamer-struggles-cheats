@@ -102,7 +102,7 @@ namespace gs_cheat_menu
                         "<color=cyan>by</color> <color=yellow>Official-Husko</color>", GUIStyle.none))
                 {
                     // Open a link in the user's browser when the label is clicked
-                    Application.OpenURL("https://github.com/Official-Husko/Churn-Vector-Cheats");
+                    Application.OpenURL("https://github.com/Official-Husko/gamer-struggles-cheats");
                 }
             }
         }
