@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 namespace gs_cheat_menu
 {
@@ -60,7 +61,7 @@ namespace gs_cheat_menu
         private void Update()
         {
             // Toggle menu visibility with Insert or F1 key
-            if (Input.GetKeyDown(KeyCode.Insert) || Input.GetKeyDown(KeyCode.F1))
+            if (Keyboard.current.insertKey.wasPressedThisFrame || Keyboard.current.f1Key.wasPressedThisFrame)
             {
                 _showMenu = !_showMenu;
             }
